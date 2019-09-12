@@ -8,14 +8,27 @@ html(lang="en")
         link(rel="stylesheet", href="css/grid.css")
     body
         main
-            section#overview
-                div.cn.grid(style="--cols: 12")
+            section#Overview
+                div.cn.grid(style="--cols: 3")
                     .hd.full
                         h1 testing new grid
                         h3 and now another change to git ??
-                    .blurb(style="--cspan: 8")
+                    .blurb(style="--cspan: 2")
                         p well did this work then ??
-                    .monitor-pic(style="--cspan: 4")
+                    .monitor-pic(style="--cspan: 1")
                         p {{ monitor pic }}
                     .ft.full
                         p footer
+            
+            section#Products
+                .cn.grid(style="--cols: 2")
+                    .hd.full
+                        h2 About our swell products
+                    .data.full
+                        h3 Our Data
+                    .rt
+                        h3 Real Time
+                    .dc
+                        h3 End of Day
+                    .ft.full
+                        p more ??

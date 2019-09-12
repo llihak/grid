@@ -79,5 +79,6 @@
 
     .wtw {
         will-change: initial;
+        display: initial;
     }
 }
