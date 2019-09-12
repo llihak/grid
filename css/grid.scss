@@ -3,19 +3,19 @@
 $bp-md: 760px;
 
 // fukol
-.flex {
+.rw, .flex {
   display: flex;   /* 1 */
   flex-wrap: wrap;   /* 2 */
   margin: -0.5em;   /* 5 (edit me!) */
 }
 
-.flex>* {
+.rw>*, .flex>* {
   flex: 1 0 240px;   /* 3 (edit me!) */
   margin: 0.5em;   /* 4 (edit me!) */
 }
 // end fukol
 
-.grid {
+.rw, .grid {
   display: flex;
   flex-wrap: wrap;
   display: grid;
@@ -30,25 +30,25 @@ $bp-md: 760px;
   grid-auto-flow: dense;
 }
 
-.grid>* {
+.rw>*, .grid>* {
   --gce: span 1;  grid-column-end: var(--gce);
   --gre: span 1;  grid-row-end: var(--gre);
   --fb: var(--gtcx);  flex-basis: var(--fb);
 }
 
-.grid>.full {
+.rw>.full, .grid>.full {
   flex-basis: 100%;
   grid-column: 1 / -1;
 }
 
 @media (min-width: $bp-md) {
-  .grid {
+  .rw, .grid {
     --cols: 12;
     --gtc: repeat(var(--cols), [col] 1fr);
   }
 
   /* rows */
-  .grid > * {
+  .rw > *, .grid > * {
     --rspan: 1;
     flex: var(--rspan);
     --gre: span var(--rspan);
