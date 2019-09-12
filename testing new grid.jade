@@ -5,10 +5,17 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title testing new grid (jade)
+        link(rel="stylesheet", href="css/grid.css")
     body
         main
             section#overview
-                div.cn
-                    h1 testing new grid
-                    h3 and now another change to git ??
-                    p well did this work then ??
+                div.cn.grid(style="--cols: 3")
+                    .hd.full
+                        h1 testing new grid
+                        h3 and now another change to git ??
+                    .blurb(style="--cspan: 2")
+                        p well did this work then ??
+                    .monitor-pic(style="--cspan: 1")
+                        p {{ monitor pic }}
+                    .ft.full
+                        p footer

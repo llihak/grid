@@ -1,28 +1,18 @@
-.wtw {
-  line-height: initial;
-  scale: initial;
-}
 // from codepen
 
 $bp-md: 760px;
 
 // fukol
 .flex {
-  display: flex;
-  /* 1 */
-  flex-wrap: wrap;
-  /* 2 */
-  margin: -0.5em;
-  /* 5 (edit me!) */
+  display: flex;   /* 1 */
+  flex-wrap: wrap;   /* 2 */
+  margin: -0.5em;   /* 5 (edit me!) */
 }
 
 .flex>* {
-  flex: 1 0 240px;
-  /* 3 (edit me!) */
-  margin: 0.5em;
-  /* 4 (edit me!) */
+  flex: 1 0 240px;   /* 3 (edit me!) */
+  margin: 0.5em;   /* 4 (edit me!) */
 }
-
 // end fukol
 
 .grid {
