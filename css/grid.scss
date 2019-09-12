@@ -46,7 +46,7 @@ $bp-md: 760px;
 
 @media (min-width: $bp-md) {
   .grid {
-    --cols: 1;
+    --cols: 12;
     --gtc: repeat(var(--cols), [col] 1fr);
   }
 
