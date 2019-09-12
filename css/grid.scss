@@ -31,12 +31,9 @@ $bp-md: 760px;
 }
 
 .grid>* {
-  --gce: span 1;
-  grid-column-end: var(--gce);
-  --gre: span 1;
-  grid-row-end: var(--gre);
-  --fb: var(--gtcx);
-  flex-basis: var(fb);
+  --gce: span 1;  grid-column-end: var(--gce);
+  --gre: span 1;  grid-row-end: var(--gre);
+  --fb: var(--gtcx);  flex-basis: var(--fb);
 }
 
 .grid>.full {

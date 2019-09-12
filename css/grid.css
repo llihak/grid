@@ -45,8 +45,8 @@
     --gre: span 1;
     grid-row-end: var(--gre);
     --fb: var(--gtcx);
-    -ms-flex-preferred-size: var(fb);
-    flex-basis: var(fb);
+    -ms-flex-preferred-size: var(--fb);
+    flex-basis: var(--fb);
 }
 
 .grid > .full {
