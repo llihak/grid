@@ -63,7 +63,7 @@
 @media (min-width: 760px) {
     .rw,
     .grid {
-        --cols: 12;
+        --cols: 2;
         --gtc: repeat(var(--cols), [col] 1fr);
     }
 
